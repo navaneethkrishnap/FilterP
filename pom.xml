@@ -88,16 +88,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-<!--		cloud storage for image-->
-		<!-- Source: https://mvnrepository.com/artifact/com.cloudinary/cloudinary-core -->
-<!--		<dependency>-->
-<!--			<groupId>com.cloudinary</groupId>-->
-<!--			<artifactId>cloudinary-core</artifactId>-->
-<!--			<version>2.3.2</version>-->
-<!--			<scope>compile</scope>-->
-<!--		</dependency>-->
-
-
 		<dependency>
 			<groupId>com.cloudinary</groupId>
 			<artifactId>cloudinary-http44</artifactId>
