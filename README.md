@@ -12,7 +12,7 @@ Idea behind the project
  * JWT based authentication using Spring security.
  * Secure CRUD operations for user posts.
  * Filtering and pagination for efficient data retrieval.
- * DTO validation for posting contents
+ * DTO validation for user inputs and request body
  * Global Exceptional Handling
  * Cloud based image storage system using Cloudinary.
  * REST API design following layered architecture.
