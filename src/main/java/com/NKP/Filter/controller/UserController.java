@@ -43,7 +43,7 @@ public class UserController {
                                 Authentication authentication){
 
         if(!authentication.getName().equals(username)){
-            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "You cannot delete other accounts");
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "You can only delete your account");
         }
         userService.deleteAccount(username);
         return "Account deleted successfully";
