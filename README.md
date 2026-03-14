@@ -1,6 +1,6 @@
 # FilterP
 
-A secure RESTful backend application built using Spring Boot that allows users to create, manage and filter posts with image uploads and authentication.
+Backend REST API built with Spring Boot, implementing JWT authentication, image storage via Cloudinary, and PostgreSQL database integration deployed on Render.
 
 Idea behind the project
 --
@@ -20,14 +20,15 @@ Idea behind the project
  * API testing performed using Postman.
 
 ## Tech Stack
-- Java 17 & frameworks - Spring Boot and Spring Security
+- Java
+- Frameworks: SpringBoot, Spring Security.
 - JWT Authentication
 - Hibernate/JPA
 - PostgreSQL
 - Maven
-- Cloudinary
-- Render
-- Postman
+- Cloudinary(Cloud based media storage)
+- Render(DB hosting and deployment)
+- Postman(API testing)
 
 ## Project Architecture
 This project follows the layered architecture which separates the concerns.
@@ -112,14 +113,20 @@ POST /auth/register
 POST /auth/login
 
 Posts
-GET /posts
+GET /posts?page=0&size=10
 GET /posts/{id}
-POST /posts
-PUT /posts/{id}
 DELETE /posts/{id}
 
 Filtering
-GET /posts/filter
+GET /posts/filter?page=0&size=10
+
+User
+POST users/post
+PUT users/posts/{id}
+PUT users/me
+GET users/{username}
+DELETE users/{username}
+GET users/posts
 
 ```
 
