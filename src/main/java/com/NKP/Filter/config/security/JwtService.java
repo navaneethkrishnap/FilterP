@@ -1,4 +1,4 @@
-package com.NKP.Filter.service.security;
+package com.NKP.Filter.config.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;

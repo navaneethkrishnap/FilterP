@@ -4,7 +4,7 @@ import com.NKP.Filter.dto.LoginDTO;
 import com.NKP.Filter.dto.UserRegistrationDTO;
 import com.NKP.Filter.model.User;
 import com.NKP.Filter.repo.UserRepository;
-import com.NKP.Filter.service.security.JwtService;
+import com.NKP.Filter.config.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

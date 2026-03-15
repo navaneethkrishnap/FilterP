@@ -33,5 +33,4 @@ public class AuthController {
         String userToken = authService.login(dto);
         return new ResponseEntity<>(userToken,HttpStatus.OK);
     }
-
 }
